@@ -29,9 +29,7 @@ var PathConfig = require('./grunt-settings.js');
         src: ['<%= config.cssDir %>*.css',
               '<%= config.cssMainFileDir %><%= config.cssMainFileName %>.css',
               '!<%= config.cssDir %>bootstrap.css',
-              '!<%= config.cssDir %>bootstrap.min.css',
-              '!<%= config.cssDir %>ie.css',
-              '!<%= config.cssDir %>ie8.css'
+              '!<%= config.cssDir %>materialize.css'
               ]
       },
       dist: {
@@ -44,9 +42,7 @@ var PathConfig = require('./grunt-settings.js');
         src: ['<%= config.cssDir %>*.css',
               '<%= config.cssMainFileDir %><%= config.cssMainFileName %>.css',
               '!<%= config.cssDir %>bootstrap.css',
-              '!<%= config.cssDir %>bootstrap.min.css',
-              '!<%= config.cssDir %>ie.css',
-              '!<%= config.cssDir %>ie8.css'
+              '!<%= config.cssDir %>materialize.min.css'
               ]
       }
     },
@@ -263,8 +259,7 @@ var PathConfig = require('./grunt-settings.js');
         src: ['<%= config.cssDir %>*.css', 
               '<%= config.cssMainFileDir %><%= config.cssMainFileName %>.css',
               '!<%= config.cssDir %>bootstrap.css',
-              '!<%= config.cssDir %>ie.css',
-              '!<%= config.cssDir %>ie8.css'
+              '!<%= config.cssDir %>materialize.min.css'
               ],
         ext: '.css'
       },
@@ -284,7 +279,7 @@ var PathConfig = require('./grunt-settings.js');
         files: [
           {
             expand: true,
-            src: ['**/*.css', '!bootstrap.css'],
+            src: ['**/*.css', '!bootstrap.css', '!materialize.css'],
             cwd: '<%= config.cssDir %>',
             dest: '<%= config.cssDir %>'
           }
